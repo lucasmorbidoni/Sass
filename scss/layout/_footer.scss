@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: $colorletra;
+    list-style: none;
+    background-color: $colorgris;
+    flex-wrap: nowrap;
+    font-size: 70%;
+    padding: 30px 100px 30px 100px;
+}   
+.img-footer{
+    width: 50px;
+}
+.datos-footer{
+    font-size: map-get( $fuente , s );
+}

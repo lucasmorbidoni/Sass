@@ -1,0 +1,45 @@
+.main-contactanos{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    .div-contactanos{
+        width: 100%;
+        background-color: rgb(239, 163, 57);
+        padding: 2px;
+        .contactanos-titulo h1{
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bolder;
+            color: $colorletra;
+            font-size: map-get($fuente,xxl );
+            flex-wrap: nowrap;
+        }
+        .section2-contactanos{
+            .formulario {
+                margin-left: 20px;
+                margin-right: 20px;
+                list-style-type: none;
+                font-weight: bolder;
+                font-size: 15px;
+                input{
+                    align-items: center;
+                    width: 100%;
+                    background-color: white;
+                    border: 2px solid $colorletra;
+                    height: 30px;
+                    &:focus{
+                        background-color: $colorgris;
+                    }   
+                }
+            }
+            .button-contactanos{
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                button{
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

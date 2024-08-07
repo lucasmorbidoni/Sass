@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    li{
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            font-size: 100%;
+            padding-left: .625rem;
+            padding-right: .625rem;
+            &:hover{
+                color: rgba(10, 99, 10, 0.938);
+                font-size: 17px;
+            }
+        }
+    }
+}

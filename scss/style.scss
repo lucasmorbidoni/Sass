@@ -1,0 +1,22 @@
+/*primero se llama utilities*/
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/funciones";
+/*segundo se llama a base*/
+@import "./base/reset";
+@import "./base/typografias";
+/*tercero se llama a layout*/
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/index";
+@import "./layout/marcasymodelos";
+@import "./layout/vendetuauto";
+@import "./layout/contactanos";
+@import "./layout/navbar";
+@import "./layout/media/mediaquery";
+/*cuarto se llama a los componentes*/
+@import "./components/button";
+/*al final se llma a los media querry*/
+/*si estamos de desktop a mobile -> decreciente*/
+/*si estamos de mobile a desktop -> creciente*/

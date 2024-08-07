@@ -1,0 +1,451 @@
+@charset "UTF-8";
+/*primero se llama utilities*/
+/*$colores:(
+    color1:black,
+    color2:red,
+    color3:green,
+);*/
+/*segundo se llama a base*/
+@import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');*/
+@font-face {
+  font-family: Roselia;
+  src: url(../assets/fonts/Rosellia-Simone.ttf); }
+
+/*tercero se llama a layout*/
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #d2d0d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header img {
+    transition: 3s;
+    width: 120px;
+    padding: 15px; }
+    .header img:hover {
+      width: 140px; }
+  .header nav {
+    padding-right: .625rem; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: black;
+  list-style: none;
+  background-color: #d2d0d0;
+  flex-wrap: nowrap;
+  font-size: 70%;
+  padding: 30px 100px 30px 100px; }
+
+.img-footer {
+  width: 50px; }
+
+.datos-footer {
+  font-size: 0.9375; }
+
+/*FRASE*/
+.main-class {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  /*empieza mas vendidos*/
+  /*EMPIEZA OPORTUNIDADES*/ }
+  .main-class .lema {
+    color: rgba(10, 99, 10, 0.938);
+    background-color: #ecd2a9;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    height: 40%; }
+  .main-class .header-lema {
+    font-size: 1.5rem; }
+  .main-class .section1 article {
+    /*Utilizado en index*/
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 5rem;
+    background-color: #f6b765;
+    gap: 1.875rem; }
+    .main-class .section1 article div {
+      display: flex;
+      position: relative; }
+      .main-class .section1 article div img {
+        height: 60px; }
+      .main-class .section1 article div h1 {
+        /*Utilizado en index*/
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+        color: rgba(10, 99, 10, 0.938);
+        padding: 15px; }
+      .main-class .section1 article div img {
+        height: 60px; }
+  .main-class .section-masvendidos {
+    height: auto;
+    background-color: #ecd2a9;
+    border-top-style: inset;
+    border-width: thick;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-template-areas: "div-amarok div-tracker div-208"; }
+    .main-class .section-masvendidos .oferta {
+      padding-top: 5px;
+      color: white; }
+    .main-class .section-masvendidos .img-masvendidos {
+      border: 5px double #706e6e;
+      width: auto; }
+    .main-class .section-masvendidos .div-p {
+      color: black; }
+      .main-class .section-masvendidos .div-p p {
+        display: inline-block;
+        font-weight: bolder;
+        font-size: medium; }
+      .main-class .section-masvendidos .div-p .cuotas {
+        position: relative;
+        right: 20px; }
+      .main-class .section-masvendidos .div-p .pactada {
+        position: relative;
+        left: 20px; }
+  .main-class .section-oportunidades {
+    /*Utilizado en index*/
+    display: flex;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding-top: 7px;
+    background-color: #f6b765;
+    margin-top: 1.875rem;
+    font-size: 130%;
+    font-weight: bolder;
+    color: rgba(10, 99, 10, 0.938);
+    gap: 1.875rem; }
+  .main-class .grid-oportunidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px;
+    text-align: center;
+    grid-template-areas: "div-polo div-duster" "div-corolla div-alaskan"; }
+    .main-class .grid-oportunidades .img-auto {
+      width: 400px; }
+
+.main-marcasymodelos .section-buscador {
+  background-color: rgba(165, 166, 173, 0.954);
+  color: black;
+  height: 35px;
+  display: flex;
+  justify-content: right; }
+
+.main-marcasymodelos .div-buscador input {
+  border: 2px solid black;
+  border-radius: 2px 2px 2% 2%;
+  margin-bottom: 2px; }
+
+.main-marcasymodelos .lupa-marcasymodelos {
+  padding-top: 8px;
+  padding-right: 15px;
+  height: 25px; }
+
+.section-marcasymodelos {
+  /*usado en marcas y modelos*/
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .section-marcasymodelos .div-marcas {
+    background-color: rgba(165, 166, 173, 0.954);
+    width: 700px;
+    align-items: center;
+    display: flex;
+    border: 2px double black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap; }
+    .section-marcasymodelos .div-marcas .logo-mym {
+      width: 100px; }
+    .section-marcasymodelos .div-marcas .marcas {
+      color: #1e1717;
+      font-weight: normal;
+      font-family: "Josefin Sans";
+      font-style: italic;
+      font-size: 70px; }
+
+.main-vendetuauto .titulo-vtuauto {
+  font-weight: bolder;
+  color: rgba(10, 99, 10, 0.938);
+  background-color: #ecd2a9;
+  width: 100%;
+  height: 180px;
+  text-align: center; }
+  .main-vendetuauto .titulo-vtuauto .h2-vtuauto {
+    text-align: center;
+    font-size: 2.5rem;
+    height: 100px;
+    align-items: center; }
+  .main-vendetuauto .titulo-vtuauto .año-marca {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif; }
+  .main-vendetuauto .titulo-vtuauto .boton-cotiza {
+    text-align: center;
+    margin-top: 10px; }
+
+.section-vendetuauto {
+  /*Utilizado en index*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: none;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .section-vendetuauto .div-vtuauto {
+    text-align: center; }
+    .section-vendetuauto .div-vtuauto .img-vtuauto {
+      width: 300px; }
+    .section-vendetuauto .div-vtuauto .h-vtuauto {
+      text-align: center;
+      color: red;
+      font-weight: bolder;
+      font-size: 2rem;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .section-vendetuauto .div-vtuauto .p-vtuauto {
+      text-align: center;
+      color: black;
+      font-weight: bolder;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+
+.main-contactanos {
+  width: 100%;
+  height: 100%;
+  background-color: white; }
+  .main-contactanos .div-contactanos {
+    width: 100%;
+    background-color: #efa339;
+    padding: 2px; }
+    .main-contactanos .div-contactanos .contactanos-titulo h1 {
+      text-align: center;
+      text-decoration: underline;
+      font-weight: bolder;
+      color: black;
+      font-size: 3.125rem;
+      flex-wrap: nowrap; }
+    .main-contactanos .div-contactanos .section2-contactanos .formulario {
+      margin-left: 20px;
+      margin-right: 20px;
+      list-style-type: none;
+      font-weight: bolder;
+      font-size: 15px; }
+      .main-contactanos .div-contactanos .section2-contactanos .formulario input {
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        border: 2px solid black;
+        height: 30px; }
+        .main-contactanos .div-contactanos .section2-contactanos .formulario input:focus {
+          background-color: #d2d0d0; }
+    .main-contactanos .div-contactanos .section2-contactanos .button-contactanos {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+      .main-contactanos .div-contactanos .section2-contactanos .button-contactanos button {
+        background-color: white; }
+
+.navbar {
+  display: flex;
+  list-style: none;
+  margin: 0; }
+  .navbar li a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 100%;
+    padding-left: .625rem;
+    padding-right: .625rem; }
+    .navbar li a:hover {
+      color: rgba(10, 99, 10, 0.938);
+      font-size: 17px; }
+
+@media (max-width: 1024px) {
+  .main-class .section-masvendidos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    text-align: center;
+    grid-template-areas: "div-amarok div-tracker"; }
+  .main-class .section1 .div-masvendidosimg .masvendidos-h1 {
+    font-size: 25px;
+    padding-top: 7px; }
+  .main-class .section1 .div-masvendidosimg .loco1 {
+    height: 45px; }
+  .main-class .grid-oportunidades {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px;
+    text-align: center;
+    grid-template-areas: "div-polo" "div-duster" "div-corolla " "div-alaskan"; }
+  .main-vendetuauto .section-vendetuauto .div-vtuauto .img-vtuauto {
+    width: 150px; } }
+
+@media (max-width: 980px) {
+  .img-vtuauto {
+    width: 250px; }
+  .section-vendetuauto {
+    display: grid;
+    flex-direction: column; }
+  .div-vtuauto {
+    margin-bottom: 2.5rem; }
+  .section-marcasymodelos .div-marcas {
+    width: 600px; }
+  .section-marcasymodelos .div-marcas .marcas {
+    font-size: 50px; }
+  .section-marcasymodelos .div-marcas .logo-mym {
+    width: 80px; } }
+
+@media (max-width: 780px) {
+  .contactanos-titulo h1 {
+    font-size: 25px; }
+  .main-class .section-masvendidos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    text-align: center;
+    grid-template-areas: "div-amarok" "div-tracker" "div-208"; }
+  .section-marcasymodelos .div-marcas {
+    width: 400px; }
+  .section-marcasymodelos .div-marcas .marcas {
+    font-size: 40px; }
+  .section-marcasymodelos .div-marcas .logo-mym {
+    width: 60px; } }
+
+@media (max-width: 750px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .navbar {
+    justify-content: center; }
+  .div-marcas {
+    width: 500px; }
+  .marcas {
+    font-size: 40px; }
+  .logo-mym {
+    width: 60px; }
+  .h2-vtuauto {
+    font-size: 1.25rem;
+    padding-top: 1.875rem; } }
+
+@media (max-width: 675px) {
+  .oportunidades {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column; }
+  .img-auto {
+    width: 250px; }
+  .footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; }
+  .div-masvendidosimg {
+    gap: 0; }
+  .loco1 {
+    height: 30px; }
+  .masvendidos-h1 {
+    font-size: 20px;
+    padding-top: 5px; }
+  .main-contactanos .div-contactanos .contactanos-titulo h1 {
+    font-size: 35px; } }
+
+@media (max-width: 600px) {
+  .div-marcas {
+    width: 400px; }
+  .marcas {
+    font-size: 30px; }
+  .logo-mym {
+    width: 60px; }
+  .main-class .section-masvendidos .img-masvendidos {
+    width: 200px; }
+  .main-class .grid-oportunidades .img-auto {
+    width: 300px; } }
+
+@media (max-width: 563px) {
+  .navbar {
+    flex-direction: column;
+    padding-bottom: 1rem;
+    gap: .3125rem;
+    align-items: center; }
+  .img-footer {
+    width: 25px; }
+  .img-vtuauto {
+    width: 150px; }
+  .h2-vtuauto h2 {
+    font-size: 40px; }
+  .section-marcasymodelos .div-marcas {
+    width: 325px; }
+  .section-marcasymodelos .div-marcas .marcas {
+    font-size: 30px; }
+  .section-marcasymodelos .div-marcas .logo-mym {
+    width: 60px; }
+  .main-class .header-lema {
+    font-size: 20px; } }
+
+@media (max-width: 480px) {
+  .div-marcas {
+    width: 250px; }
+  .marcas {
+    font-size: 15px; }
+  .logo-mym {
+    width: 40px; } }
+
+@media (max-width: 400px) {
+  .section-marcasymodelos .div-marcas {
+    width: 200px; }
+  .section-marcasymodelos .div-marcas .marcas {
+    font-size: 20px; }
+  .section-marcasymodelos .div-marcas .logo-mym {
+    width: 30px; } }
+
+@media (max-width: 370px) {
+  .main-contactanos .div-contactanos .contactanos-titulo h1 {
+    font-size: 20px; }
+  .main-class .grid-oportunidades {
+    padding: 1px; } }
+
+/*cuarto se llama a los componentes*/
+/*van los botones*/
+/*al final se llma a los media querry*/
+/*si estamos de desktop a mobile -> decreciente*/
+/*si estamos de mobile a desktop -> creciente*/

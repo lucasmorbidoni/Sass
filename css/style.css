@@ -69,7 +69,7 @@
   .main-class .header-lema {
     font-size: 1.5rem; }
   .main-class .section1 article {
-    /*Utilizado en index*/
+    /*Utilizado en index y vende tu auto*/
     display: flex;
     flex-wrap: none;
     justify-content: center;
@@ -85,7 +85,7 @@
       .main-class .section1 article div img {
         height: 60px; }
       .main-class .section1 article div h1 {
-        /*Utilizado en index*/
+        /*Utilizado en index y vende tu auto*/
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -126,7 +126,7 @@
         position: relative;
         left: 20px; }
   .main-class .section-oportunidades {
-    /*Utilizado en index*/
+    /*Utilizado en index y vende tu auto*/
     display: flex;
     flex-wrap: none;
     justify-content: center;
@@ -214,7 +214,7 @@
     margin-top: 10px; }
 
 .section-vendetuauto {
-  /*Utilizado en index*/
+  /*Utilizado en index y vende tu auto*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

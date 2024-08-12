@@ -203,7 +203,7 @@
   color: rgba(10, 99, 10, 0.938);
   background-color: #ecd2a9;
   width: 100%;
-  height: 180px;
+  height: 230px;
   text-align: center; }
   .main-vendetuauto .titulo-vtuauto .h2-vtuauto {
     text-align: center;
@@ -216,6 +216,7 @@
     font-family: "Josefin Sans", sans-serif; }
   .main-vendetuauto .titulo-vtuauto .boton-cotiza {
     text-align: center;
+    padding-right: 25px;
     margin-top: 10px; }
 
 .section-vendetuauto {
@@ -247,11 +248,13 @@
 
 .main-contactanos {
   width: 100%;
-  background-color: white; }
+  background-color: #d2d0d0;
+  align-content: center; }
   .main-contactanos .div-contactanos {
     width: 100%;
     background: linear-gradient(90deg, #ec9a25 0%, #f5cd42 53%, #feff5f 100%);
-    padding: 2px; }
+    padding-bottom: 10px;
+    padding-top: 5px; }
     .main-contactanos .div-contactanos .contactanos-titulo h1 {
       text-align: center;
       text-decoration: underline;
@@ -267,7 +270,7 @@
       font-weight: bolder;
       font-size: 15px; }
     .main-contactanos .div-contactanos .section2-contactanos input {
-      width: 100%;
+      width: 95%;
       background-color: white;
       border: 2px solid black;
       height: 30px; }
@@ -280,9 +283,9 @@
       .main-contactanos .div-contactanos .button-contactanos button {
         background-color: white; }
     .main-contactanos .div-contactanos .mapa {
-      text-align: center;
-      margin-top: 1.875rem;
-      margin-bottom: 1.875rem; }
+      display: grid;
+      justify-items: center;
+      margin-bottom: 10px; }
 
 .navbar {
   display: flex;

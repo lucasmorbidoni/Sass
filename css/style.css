@@ -46,7 +46,10 @@
   padding: 30px 100px 30px 100px; }
 
 .img-footer {
-  width: 50px; }
+  width: 40px;
+  transition: 2s; }
+  .img-footer:hover {
+    width: 60px; }
 
 .datos-footer {
   font-size: 0.9375; }
@@ -162,36 +165,38 @@
 .main-marcasymodelos .div-buscador input {
   border: 2px solid black;
   border-radius: 2px 2px 2% 2%;
+  padding-top: 1px;
   margin-bottom: 2px; }
 
 .main-marcasymodelos .lupa-marcasymodelos {
-  padding-top: 8px;
+  padding-top: 3px;
   padding-right: 15px;
-  height: 25px; }
+  height: 24px; }
 
 .section-marcasymodelos {
   /*usado en marcas y modelos*/
   display: grid;
   flex-direction: column;
-  align-items: center;
   justify-content: center; }
   .section-marcasymodelos .div-marcas {
     background-color: rgba(165, 166, 173, 0.954);
     width: 700px;
-    align-items: center;
     display: flex;
     border: 2px double black;
     margin-top: 30px;
     margin-bottom: 30px;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    text-align: center; }
     .section-marcasymodelos .div-marcas .logo-mym {
-      width: 100px; }
+      width: 100px;
+      padding-left: 10px; }
     .section-marcasymodelos .div-marcas .marcas {
       color: #1e1717;
       font-weight: normal;
       font-family: "Josefin Sans";
       font-style: italic;
-      font-size: 70px; }
+      font-size: 60px;
+      padding-top: 15px; }
 
 .main-vendetuauto .titulo-vtuauto {
   font-weight: bolder;
@@ -242,39 +247,42 @@
 
 .main-contactanos {
   width: 100%;
-  height: 100%;
   background-color: white; }
   .main-contactanos .div-contactanos {
     width: 100%;
-    background-color: #efa339;
+    background: linear-gradient(90deg, #ec9a25 0%, #f5cd42 53%, #feff5f 100%);
     padding: 2px; }
     .main-contactanos .div-contactanos .contactanos-titulo h1 {
       text-align: center;
       text-decoration: underline;
       font-weight: bolder;
-      color: black;
+      color: colorletra;
       font-size: 3.125rem;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+      transition: 2s; }
+      .main-contactanos .div-contactanos .contactanos-titulo h1:hover {
+        color: white; }
     .main-contactanos .div-contactanos .section2-contactanos .formulario {
-      margin-left: 20px;
-      margin-right: 20px;
       list-style-type: none;
       font-weight: bolder;
       font-size: 15px; }
-      .main-contactanos .div-contactanos .section2-contactanos .formulario input {
-        align-items: center;
-        width: 100%;
-        background-color: white;
-        border: 2px solid black;
-        height: 30px; }
-        .main-contactanos .div-contactanos .section2-contactanos .formulario input:focus {
-          background-color: #d2d0d0; }
-    .main-contactanos .div-contactanos .section2-contactanos .button-contactanos {
+    .main-contactanos .div-contactanos .section2-contactanos input {
+      width: 100%;
+      background-color: white;
+      border: 2px solid black;
+      height: 30px; }
+      .main-contactanos .div-contactanos .section2-contactanos input:focus {
+        background-color: #d2d0d0; }
+    .main-contactanos .div-contactanos .button-contactanos {
       text-align: center;
       margin-top: 10px;
       margin-bottom: 20px; }
-      .main-contactanos .div-contactanos .section2-contactanos .button-contactanos button {
+      .main-contactanos .div-contactanos .button-contactanos button {
         background-color: white; }
+    .main-contactanos .div-contactanos .mapa {
+      text-align: center;
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem; }
 
 .navbar {
   display: flex;

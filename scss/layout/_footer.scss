@@ -10,7 +10,10 @@
     padding: 30px 100px 30px 100px;
 }   
 .img-footer{
-    width: 50px;
+    width: 40px;
+    transition: 2s;
+    &:hover{
+        width: 60px;}
 }
 .datos-footer{
     font-size: map-get( $fuente , s );

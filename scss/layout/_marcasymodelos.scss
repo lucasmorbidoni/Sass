@@ -10,33 +10,36 @@
     .div-buscador input{
         border: 2px solid rgb(0, 0, 0);
         border-radius: 2px 2px 2% 2%;
+        padding-top: 1px;
         margin-bottom: 2px;
     }
     .lupa-marcasymodelos{
-        padding-top: 8px;
+        padding-top: 3px;
         padding-right: 15px;
-        height: 25px;}
+        height: 24px;}
 }
 .section-marcasymodelos{
     @include colum;
     .div-marcas{
         background-color: rgba(165, 166, 173, 0.954);    
         width: 700px;
-        align-items: center;
         display: flex;
         border: 2px double black;
         margin-top: 30px;
         margin-bottom: 30px;
         flex-wrap: nowrap;
+        text-align: center;
         .logo-mym{
             width: 100px;
+            padding-left: 10px;
         }
         .marcas{
             color: rgb(30, 23, 23); 
             font-weight: normal;
             font-family: "Josefin Sans"; 
             font-style: italic; 
-            font-size: 70px;
+            font-size: 60px;
+            padding-top: 15px;
         }
     }
 }

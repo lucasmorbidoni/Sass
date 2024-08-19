@@ -1,0 +1,13 @@
+.main-qsomos{
+    width: 100%;
+    .div-qsomos{
+        display: flex;
+        .img-qsomos{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-size: contain;
+            background-position: 100%;
+        }
+    }
+}
